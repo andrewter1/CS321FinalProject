@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="Content/js/jquery-3.2.1.min.js"></script>
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <script src="Content/js/bootstrap.js"></script>
+    <script src="Content/js/npm.js"></script>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Luxury Motors</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="inventory.aspx">Inventory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li><a href="admin.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer id="footer">
+        Created by Yaakov, Edwin and Omer - 2017
+    </footer>
+</body>
+</html>

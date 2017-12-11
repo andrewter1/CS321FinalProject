@@ -1,0 +1,16 @@
+﻿body {
+}
+#welcome {
+    text-align: center;
+    color: cadetblue;
+    font-family: futura-pt,futura,'century gothic',centurygothic,applegothic,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+.carousel img {
+    min-width: 100%;
+}
+
+#footer{
+    text-align: right;
+    padding: 25px;
+}
